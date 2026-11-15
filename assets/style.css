@@ -205,3 +205,17 @@ section { padding: clamp(90px, 11vw, 160px) 0 0; scroll-margin-top: 60px; }
 .split > div:first-child.reveal img { position: sticky; top: 96px; }
 #screen .split > div:first-child { align-self: stretch; }
 #screen .split > div:first-child img { position: sticky; top: 96px; }
+
+/* Brand spots: smaller players in two columns */
+.spots-lab { margin: 46px 0 6px; font-weight: 700; text-transform: uppercase; font-size: 14px; color: #c9bab2; }
+.spots { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+.player.sm { grid-template-columns: 48px 1fr auto; gap: 16px; padding: 18px 0; }
+.player.sm .pbtn { width: 48px; height: 48px; }
+.player.sm .pbtn svg { width: 16px; height: 16px; }
+.player.sm .pinfo h3 { font-size: 20px; }
+.player.sm .pinfo p { margin: 2px 0 8px; font-size: 13px; }
+.player.sm .bar { height: 22px; }
+.player.sm .ptime { min-width: 80px; font-size: 13px; }
+.spots .player:last-child { border-bottom: 0; }
+.spots { border-bottom: 1px solid rgba(239,232,227,.3); }
+@media (max-width: 900px) { .spots { grid-template-columns: 1fr; } }

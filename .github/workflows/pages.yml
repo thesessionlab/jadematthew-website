@@ -26,7 +26,7 @@ jobs:
       # First run only: copy every image into the repo so nothing depends on Squarespace or Unsplash
       - name: Copy images into the site
         run: |
-          if grep -rqE "squarespace-cdn|static1.squarespace" --include=*.html .; then
+          if grep -rqE "squarespace-cdn|wpenginepowered|outspokenvoices" --include=*.html .; then
             bash localise-images.sh
             git config user.name "github-actions"
             git config user.email "github-actions@users.noreply.github.com"
